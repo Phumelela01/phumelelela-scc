@@ -1,0 +1,169 @@
+html {background-color: #f5f5f5; }
+p, ul {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; color: #242323;} 
+.main-nav {padding: 10px; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.main-nav a {color: #242323; text-decoration: none; padding: 10px; font-weight: bold; font-size: 25px;}
+.main-nav a:hover {color: #ec0bf4; text-decoration: underline;} 
+.logo {width: 40px; height: auto; vertical-align: middle; margin-right: 20px;}
+.heading-1 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 35px; color: #242323; text-align: left; margin-left: 45px; margin-top: -40px;}
+.heading-2 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px; color: #242323; text-align: center; margin-top: 20px;}
+.heading-3 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: #242323; text-align: center; margin-top: 20px;}
+.heading-4 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; color: #242323; text-align: center; margin-top: 20px;}
+.heading-5 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px; color: #242323; text-align: center; margin-top: 20px;}
+.heading-6 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px; color: #242323; text-align: center; margin-top: 20px;}
+.wishlist-button {margin-left: 50px; margin-top: 20px; margin-bottom: 20px;font-size:25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #242323;}
+.wishlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    background-color: rgb(194, 232, 232);
+}
+.icon {width: 40px; height: auto; vertical-align: middle; margin-right: 10px; margin-left: 50%;}
+.button {background-color: #111bdd; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;}
+.button {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; margin: 10px;}
+.button:active {background-color: #0d1a99; color: white; transform: scale(0.95); transition: transform 0.1s;}
+a {color: #111bdd; text-decoration: none; font-weight: bold;}
+a:hover {color: #0d1a99; text-decoration: underline;}
+
+.donor-logo {width: 100px; height: auto; vertical-align: middle; margin-right: 20px; margin-top: 20px; transition: transform 0.3s; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+.donor-logo img {width: 100%; height: auto; object-fit: contain; justify-content: center;}
+.donor-logo img:hover {transform: scale(1.05); transition: transform 0.3s;}
+.donor-logo img:active {transform: scale(0.95); transition: transform 0.1s;}
+.donor-logo img:focus {outline: 2px solid #111bdd; outline-offset: 2px;}
+.donor-logo img:focus:hover {outline: 2px solid #0d1a99; outline-offset: 2px;}
+.donor-logo img:focus:active {outline: 2px solid #0d1a99; outline-offset: 2px;}
+.donor-logo img:focus-visible {outline: 2px solid #111bdd; outline-offset: 2px;}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color: rgb(194, 232, 232);
+}
+.contact-form {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(194, 232, 232);;
+    text-align: center;
+}
+#name, #surname, #cellnumber, #email {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#message {
+    width: 50%;
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.submit-button {
+    background-color: #111bdd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bolder;
+    margin-left: 36%;
+}
+.disclaimer {
+    font-size: 18px;
+    color: #242323;
+    margin-top: 10px;
+    margin-right: 13%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.social-media {width: 50px; height: auto; vertical-align: middle; margin-right: 20px; margin-top: 20px; transition: transform 0.3s; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+.footer {padding: 20px; text-align: center; font-size: 18px; color: #242323; background-color: rgb(194, 232, 232);     border-radius: 10px; /* Optional: Add rounded corners */}
+.footer a {color: #111bdd; text-decoration: none; font-weight: bold; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+.footer a:hover {color: #0d1a99; text-decoration: underline;}
+
+.container {display: flex;
+align-items: center; /* vertically align text with image */
+gap: 20px; /* spacing between image and text */
+flex-wrap: wrap; /* stacks on small screens */}
+
+.hero-image {
+    position:relative;
+    width: 700px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin: auto; /* Center the image */
+    margin-top: 20px; /* Add some space above the image */
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+    }
+
+.overlay-text {position: relative; 
+top: -50%; /* Adjust this value to position the text vertically */
+left: 50%; /* Center the text horizontally */
+transform: translateX(-50%); /* Center the text horizontally */
+text-align: center;
+font-size: 24px; /* Adjust the font size as needed */
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /*border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    margin-left: 25px; margin-top: 20px;
+   
+}
+
+.container, .text {background-color: white;}
+hr {
+  
+    height: 1px;
+    background-color: #11b8dd; /* Change this to your desired color */
+    margin: 20px 0; /* Adjust the spacing as needed */
+    border-style: waved; /* Optional: Add a wavy effect */
+    border-color: #e9cee8;
+    
+    
+}
+
+.email-icon {width: 40px; height: auto; vertical-align: left; margin-right: 70px; border-radius: 20%;}
+.address-email {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; color: #242323; text-align: left; margin-left: 45px; margin-top: -60px;}
+.about-hr {
+    height: 3px;
+    background-color: #11b8dd; /* Change this to your desired color */
+    margin: 20px 0; /* Adjust the spacing as needed */
+    border-style: waved; /* Optional: Add a wavy effect */
+    border-color: #e9cee8;
+}
+.gallery-image {
+    width: 40%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.fixed-attachment {background-attachment: fixed;}
+header {background-attachment: fixed;}
