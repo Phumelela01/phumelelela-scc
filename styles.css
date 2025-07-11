@@ -1,5 +1,5 @@
 html {background-color: #f5f5f5; 
-calc(100% - 20px) 0px 0px 0px; /* Adjust the width to fit your layout */
+Calc:(100% - 20px) 0px 0px 0px; /* Adjust the width to fit your layout */
     padding: 10px;
     box-sizing: border-box;
     }
@@ -118,6 +118,9 @@ flex-wrap: wrap; /* stacks on small screens */}
     background-position: center; /* Center the image */
     border-radius: 10px; /* Optional: Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+    Calc:(100% - 20px) 0px 0px 0px; /* Adjust the width to fit your layout */
+    padding: 10px;
+    box-sizing: border-box;
     }
 
 .overlay-text {position: relative; 
