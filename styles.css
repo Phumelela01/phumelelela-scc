@@ -41,40 +41,6 @@ a:hover {color: #0d1a99; text-decoration: underline;}
 .donor-logo img:focus:hover {outline: 2px solid #0d1a99; outline-offset: 2px;}
 .donor-logo img:focus:active {outline: 2px solid #0d1a99; outline-offset: 2px;}
 .donor-logo img:focus-visible {outline: 2px solid #111bdd; outline-offset: 2px;}
-
-.donors {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  background: #fefefe; /* optional background */
-  padding: 10px 0;
-}
-
-.donor-logos {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scrollLeft 15s linear infinite;
-}
-
-.donor-logo {
-  height: 60px;
-  margin: 0 30px;
-  vertical-align: middle;
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-
-
-
-
 .form {
     display: flex;
     flex-direction: column;
@@ -142,19 +108,27 @@ gap: 20px; /* spacing between image and text */
 flex-wrap: wrap; /* stacks on small screens */}
 
 .hero-image {
-    position:relative;
-    width: 700px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-    margin: auto; /* Center the image */
-    margin-top: 20px; /* Add some space above the image */
-    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); /* Replace with your image URL */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
-    Calc:(100% - 20px) 0px 0px 0px; /* Adjust the width to fit your layout */
-    padding: 10px;
-    box-sizing: border-box;
+  position: relative;
+  margin: 20px auto;
+
+  width: calc(100% - 40px); /* proper use of calc() with margin included */
+  max-width: 1200px; /* optional: prevents it from stretching too far on big screens */
+
+  height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
     }
 
 .overlay-text {position: relative; 
