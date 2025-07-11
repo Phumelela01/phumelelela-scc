@@ -110,25 +110,20 @@ flex-wrap: wrap; /* stacks on small screens */}
 .hero-image {
   position: relative;
   margin: 20px auto;
-
   width: calc(100% - 40px); /* proper use of calc() with margin included */
   max-width: 1200px; /* optional: prevents it from stretching too far on big screens */
-
   height: 80vh;
   background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-
     }
 
 .overlay-text {position: relative; 
