@@ -1,14 +1,14 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-        <title>Phumelela Special Care Centre</title>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="description" content="Disability centre in Ezibeleni, Queenstown. Phumelela Special Care Centre provides holistic support to children with disabilities.">
-        <meta name="keywords" content="special care, disability, Phumelela, South Africa, children">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-        <link rel="icon" href="logo.png" type="image/x-icon"> 
+    <title>Phumelela Special Care Centre - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Disability centre in Ezibeleni, Queenstown. Phumelela Special Care Centre provides holistic support to children with disabilities.">
+    <meta name="keywords" content="special care, disability, Phumelela, South Africa, children">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="icon" href="logo.png" type="image/x-icon"> 
 </head>
 <body>
     <header>
@@ -18,51 +18,65 @@
         <h1 class="heading-1">Phumelela Special Care Centre</h1>
         
         <nav class="main-nav">
-        <!-- Create HTML pages for all these so I can add the relevant href links-->
+            <!-- Navigation links -->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="gallery.html">Gallery</a>
             <a href="programmes.html">Programmes</a>
-            <a href="wishlist.html">Wishlist<a></a>
+            <a href="wishlist.html">Wishlist</a>
             <a href="contact-us.html">Contact Us</a>
-            <a href="blog.html">Blog</a>
+            <a href="blog.html" aria-current="page">Blog</a>
         </nav>
         <hr>
     </header>
 
-
     <main>
-        <h2 class="heading-2">Blog</h2>
-        <p>Welcome to the Phumelela Special Care Centre blog! Here, we share stories, updates, and insights into our programmes and the lives of children with disabilities.</p>
-        <!-- Add blog posts here -->
-         <!-- Also add informational pieces-->
+        <section class="blog-intro">
+            <h2 class="heading-2">Blog</h2>
+            <p>Welcome to the Phumelela Special Care Centre blog! Here, we share stories, updates, and insights into our programmes and the lives of children with disabilities.</p>
+        </section>
+
+        <section class="blog-posts">
+            <!-- Add your blog posts here as articles -->
+            <!-- Example: -->
+            <!--
+            <article class="blog-post">
+                <h3 class="heading-3">Title of Blog Post</h3>
+                <p>Summary or introduction of the post...</p>
+                <a href="blog-post-1.html" class="read-more">Read More</a>
+            </article>
+            -->
+        </section>
     </main>  
 
-    <section>
-        <!-- Contact Us section -->
-        <form action="submit_form.php" method="post" class="form">
-            <h2 class="contact-us" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="heading-2">Contact Us</h2>
+    <section class="contact-section">
+        <form action="submit_form.php" method="post" class="form" novalidate>
+            <h2 class="contact-us heading-2">Contact Us</h2>
             <p>If you would like to learn more about Phumelela Special Care Centre, our programmes, or how you can support our work, please contact us:</p>
             
             <fieldset class="contact-form">
-             <input type="text" id="name" name="name" placeholder="Your Name" required>
-             <input type="text" id="surname" name="surname" placeholder="Your Surname" required>
-             <input type="tel" id="cellnumber" name="cellnumber" placeholder="Your Cellphone Number" required>
-             <input type="email" id="email" name="email" placeholder="Your Email" required>
-             <p class="disclaimer">Your details are safe with us.</p>
-             <input type="text" id="message" name="message" placeholder="Your Message" required>
-             <button type="submit" class="submit-button">Submit</button>
-         </fieldset>
-             </form>   
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="text" id="surname" name="surname" placeholder="Your Surname" required>
+                <input type="tel" id="cellnumber" name="cellnumber" placeholder="Your Cellphone Number" required pattern="[0-9+\-\s]+">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <p class="disclaimer">Your details are safe with us.</p>
+                <button type="submit" class="submit-button">Submit</button>
+            </fieldset>
+        </form>   
     </section>
 
+    <footer>
+        <hr>
+        <div class="footer">
+            <a href="https://www.facebook.com/phumelela.specialcarecentre" target="_blank" rel="noopener noreferrer">
+                <img src="facebook-icon.png" alt="Facebook Icon" class="social-media">
+            </a>
+            <a href="https://www.instagram.com/phumelela_special_care_centre/" target="_blank" rel="noopener noreferrer">
+                <img src="instagram-icon.png" alt="Instagram Icon" class="social-media">
+            </a>
+            <p>&copy; 2025 Phumelela Special Care Centre. All Rights Reserved.</p>
+        </div> 
+    </footer>
 </body>
-<hr>
-<footer>
-    <div class="footer">
-        <a href="https://www.facebook.com/phumelela.specialcarecentre" target="_blank"><img src="facebook-icon.png" alt="Facebook Icon" class="social-media"></a>
-        <a href="https://www.instagram.com/phumelela_special_care_centre/" target="_blank"><img src="instagram-icon.png" alt="instagram Icon" class="social-media"></a>
-        <p>&copy 2025 Phumelela Special Care Centre. All Rights Reserved.</p>
-    </div> 
- </footer>
 </html>
