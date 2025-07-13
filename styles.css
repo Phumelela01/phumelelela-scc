@@ -65,7 +65,6 @@ header {
   justify-content: center;
   flex-grow: 2;
 }
-
 .main-nav a {
   text-decoration: none;
   color: #1a5959;
@@ -75,13 +74,13 @@ header {
   border-radius: 6px;
   transition: background-color 0.3s, color 0.3s;
 }
-
 .main-nav a:hover,
 .main-nav a:focus {
   background-color: #1a5959;
   color: #daf1f0;
   outline: none;
 }
+
 
 /* Mobile nav toggle styles */
 /* @media (max-width: 768px) {
