@@ -84,7 +84,7 @@ header {
 }
 
 /* Mobile nav toggle styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .main-nav {
     display: none;
     flex-direction: column;
@@ -119,7 +119,7 @@ header {
   .nav-toggle {
     display: none;
   }
-}
+} */
 
 /* Hero Section */
 .hero {
