@@ -466,6 +466,7 @@ footer {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin: 2rem, 2rem, 2rem;
       padding: 0 20px;
+      margin-left: 40px;
     }
 
    ul {
@@ -475,3 +476,13 @@ footer {
 li {
   margin-bottom: 0.5rem; /* Adds spacing between items (optional) */
 }
+
+/* Add spacing between headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
