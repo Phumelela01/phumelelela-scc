@@ -452,7 +452,7 @@ footer {
    /* Gallery image styles */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
   gap: 0;
   max-width: 1200px;
   margin: 0 auto;
@@ -460,7 +460,7 @@ footer {
 }
 
 .gallery-image {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 0;
   box-shadow: none;
