@@ -505,4 +505,97 @@ p {
   color: #145353;
 }
 
+/* Enhanced Donation Page Styling */
+.donation-page {
+  padding: 60px 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  background: #e6f4f1;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 80, 80, 0.1);
+  color: #145353;
+}
+
+.donation-page h2,
+.donation-page h3 {
+  color: #114c4c;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.donation-page p,
+.donation-page li {
+  font-size: 1.15rem;
+  color: #2b4f4f;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.donation-page ul {
+  padding-left: 2rem;
+  list-style: square;
+  color: #2b4f4f;
+}
+
+.donation-page hr {
+  margin: 3rem 0;
+  border: none;
+  border-top: 2px dashed #a2c8c8;
+}
+
+/* Leafy Icon Accent (optional if you add icons or background images) */
+.donation-page::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  background-image: url('https://www.svgrepo.com/show/331963/leaf.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* Call-to-action style */
+.donation-page .cta {
+  background-color: #1a5959;
+  color: #fff;
+  padding: 16px 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.donation-page .cta:hover {
+  background-color: #145353;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .donation-page {
+    padding: 30px 20px;
+  }
+
+  .donation-page h2 {
+    font-size: 1.6rem;
+  }
+
+  .donation-page h3 {
+    font-size: 1.3rem;
+  }
+
+  .donation-page p,
+  .donation-page li {
+    font-size: 1.05rem;
+  }
+}
+
 
