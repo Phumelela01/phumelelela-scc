@@ -970,3 +970,62 @@ p {
   background-color: #daf1f0;
   color: #145353;
 }
+.programmes {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.programme-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.programme-section.alt {
+  flex-direction: row-reverse;
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+}
+
+.programme-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.programme-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.programme-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading-2.red {
+  color: #cc0000;
+  margin-bottom: 1rem;
+}
+
+.heading-2.green {
+  color: #2c8a00;
+  margin-bottom: 1rem;
+}
+
+.bullet-list {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.bullet-list li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
