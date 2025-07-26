@@ -20,27 +20,33 @@
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
         <a href="programmes.html">Programmes</a>
-        <a href="wishlist.html" aria-current="page">Wishlist</a>
+        <a href="wishlist.html">Wishlist</a>
         <a href="contact-us.html">Contact Us</a>
-        <a href="blog.html">Blog</a>
       </nav>
     </div>
   </header>
 
     <main style="max-width: 1200px; margin: auto;" class="programmes">
+<div>
+  <h1 class="heading-2">What We Do</h1> 
+  </div>
+
+  <hr>
+
   <section class="programme-section">
     <div class="programme-text">
-      <h2 class="heading-2 red">Early Intervention Projects</h2>
-      <ul class="bullet-list">
-        <li>Specialised education and learning support</li>
-        <li>Daily meals (breakfast and lunch)</li>
-        <li>Life skills training and developmental activities</li>
-        <li>Disability awareness and inclusion advocacy</li>
-      </ul>
-      <p>Our early intervention programme supports holistic development for children with disabilities in Ezibeleni. We provide a safe, caring environment focused on growth, independence, and dignity.</p>
-    </div>
+  <h2 class="heading-2 red">Early Intervention & Daily Support</h2>
+  <ul class="bullet-list">
+    <li>Specialised education and learning support for children with disabilities</li>
+    <li>Daily meals (breakfast and lunch)</li>
+    <li>Life skills training and structured developmental activities</li>
+    <li>Disability rights awareness and inclusion advocacy</li>
+  </ul>
+  <p>We offer holistic care and developmental support for children with disabilities in Ezibeleni. Our nurturing environment fosters independence, dignity, and meaningful inclusion in everyday life.</p>
+</div>
+
     <div class="programme-image">
-      <img src="image-25.png" alt="Children at the centre" />
+      <img src="image-19.png" alt="Children at the centre" />
     </div>
   </section>
 
@@ -57,6 +63,7 @@
         <li><strong>Beadwork:</strong> Creativity through handmade crafts.</li>
         <li><strong>Jam & Juice Making:</strong> Food preservation techniques.</li>
       </ul>
+      <p>To learn more about our programmes, please visit our cooperative, <a href="" target="_blank" style="text-decoration: none; color: rgb(244, 215, 67);">Let There Be Light</a>.</p>
     </div>
   </section>
     </main>
@@ -80,16 +87,31 @@
     </section>
 
     <hr />
-      <footer>
+  <footer>
     <div class="footer">
-      <a href="https://www.facebook.com/phumelela.specialcarecentre" target="_blank">
-        <img src="facebook-icon.png" alt="Facebook" class="social-icon" />
+      <a href="https://www.facebook.com/phumelela.specialcarecentre" target="_blank" rel="noopener noreferrer">
+        <img src="facebook-icon.png" alt="Follow Phumelela on Facebook" class="social-icon" />
       </a>
-      <a href="https://www.instagram.com/phumelela_special_care_centre/" target="_blank">
-        <img src="instagram-icon.png" alt="Instagram" class="social-icon" />
+      <a href="https://www.instagram.com/phumelela_special_care_centre/" target="_blank" rel="noopener noreferrer">
+        <img src="instagram-icon.png" alt="Follow Phumelela on Instagram" class="social-icon" />
       </a>
-      <p>&copy; 2025 Phumelela Special Care Centre. All rights reserved.</p>
+      <p>&copy; 2025 Phumelela Special Care Centre. All rights reserved. Caring for children with disabilities in Queenstown, South Africa.</p>
     </div>
+    <div class="npo-info">
+  <p>NPO Number: 086 262 NPO | PBO Number: 930056352</p>
+</div>
   </footer>
+    <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const mainNav = document.querySelector('.main-nav');
+
+      mobileMenuBtn.addEventListener('click', function() {
+        mainNav.classList.toggle('nav-open');
+        mobileMenuBtn.classList.toggle('menu-open');
+      });
+    });
+  </script>
 </body>
 </html>

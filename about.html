@@ -23,9 +23,8 @@
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
         <a href="programmes.html">Programmes</a>
-        <a href="wishlist.html" aria-current="page">Wishlist</a>
+        <a href="wishlist.html">Wishlist</a>
         <a href="contact-us.html">Contact Us</a>
-        <a href="blog.html">Blog</a>
       </nav>
     </div>
   </header>
@@ -94,16 +93,32 @@
         </section>
     </main>
 
-  <footer>
+   <footer>
     <div class="footer">
-      <a href="https://www.facebook.com/phumelela.specialcarecentre" target="_blank">
-        <img src="facebook-icon.png" alt="Facebook" class="social-icon" />
+      <a href="https://www.facebook.com/phumelela.specialcarecentre" target="_blank" rel="noopener noreferrer">
+        <img src="facebook-icon.png" alt="Follow Phumelela on Facebook" class="social-icon" />
       </a>
-      <a href="https://www.instagram.com/phumelela_special_care_centre/" target="_blank">
-        <img src="instagram-icon.png" alt="Instagram" class="social-icon" />
+      <a href="https://www.instagram.com/phumelela_special_care_centre/" target="_blank" rel="noopener noreferrer">
+        <img src="instagram-icon.png" alt="Follow Phumelela on Instagram" class="social-icon" />
       </a>
-      <p>&copy; 2025 Phumelela Special Care Centre. All rights reserved.</p>
+      <p>&copy; 2025 Phumelela Special Care Centre. All rights reserved. Caring for children with disabilities in Queenstown, South Africa.</p>
     </div>
+    <div class="npo-info">
+  <p>NPO Number: 086 262 NPO | PBO Number: 930056352</p>
+</div>
   </footer>
+  
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mainNav = document.querySelector('.main-nav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mainNav.classList.toggle('nav-open');
+                mobileMenuBtn.classList.toggle('menu-open');
+            });
+        });
+    </script>
 </body>
 </html>
