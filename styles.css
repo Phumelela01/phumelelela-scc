@@ -42,6 +42,35 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  padding: 10px 20px; /* Add some padding */
+}
+
+/* On mobile screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-title {
+    font-size: 1.4rem; /* smaller title on mobile */
+    margin: 10px 0;
+  }
+
+  .main-nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    display: none; /* hidden initially, shown with mobile menu button */
+  }
+
+  .main-nav.nav-open {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
 }
 
 .logo {
