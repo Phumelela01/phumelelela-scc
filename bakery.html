@@ -31,26 +31,36 @@
   <link rel="canonical" href="https://www.phumelela.org/bakery.html" />
 </head>
 <body>
-  <header>
+  <header class="main-header">
     <div class="header-container">
-      <img src="logo.png" alt="Phumelela Special Care Centre Logo" class="logo" />
-      <h1 class="site-title">Phumelela Special Care Centre</h1>
+      <!-- Logo and Title Section -->
+      <div class="logo-section">
+        <img src="logo.png" alt="Phumelela Special Care Centre Logo" class="logo" />
+        <div class="title-wrapper">
+          <h1 class="site-title">Phumelela</h1>
+          <span class="site-subtitle">Special Care Centre</span>
+        </div>
+      </div>
       
       <!-- Mobile Menu Button -->
-      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" id="mobileMenuBtn">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
       </button>
       
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="programmes.html">Programmes</a>
-        <a href="bakery.html">Bakery</a>
-        <a href="wishlist.html">Wishlist</a>
-        <a href="contact-us.html">Contact Us</a>
+      <!-- Navigation Menu -->
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-overlay" id="navOverlay"></div>
+        <div class="nav-content">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="programmes.html" class="nav-link">Programmes</a>
+          <a href="bakery.html" class="nav-link">Bakery</a>
+          <a href="wishlist.html" class="nav-link">Wishlist</a>
+          <a href="contact-us.html" class="nav-link">Contact Us</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -287,7 +297,7 @@
 </div>
   </footer>
 
-  <script>
+ <!-- <script>
     // Mobile menu toggle
     document.addEventListener('DOMContentLoaded', function() {
       const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -296,6 +306,72 @@
       mobileMenuBtn.addEventListener('click', function() {
         mainNav.classList.toggle('nav-open');
         mobileMenuBtn.classList.toggle('menu-open');
+      });
+    });
+  </script> -->
+
+  <script>
+    // Enhanced Mobile menu toggle with improved animations
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mainNav = document.getElementById('mainNav');
+      const navOverlay = document.getElementById('navOverlay');
+      const navLinks = document.querySelectorAll('.nav-link');
+      let isMenuOpen = false;
+
+      function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+        
+        if (isMenuOpen) {
+          mainNav.classList.add('nav-open');
+          mobileMenuBtn.classList.add('menu-open');
+          document.body.style.overflow = 'hidden'; // Prevent background scrolling
+          
+          // Animate nav links with staggered delay
+          navLinks.forEach((link, index) => {
+            link.style.animationDelay = `${index * 0.1}s`;
+            link.classList.add('animate-in');
+          });
+        } else {
+          mainNav.classList.remove('nav-open');
+          mobileMenuBtn.classList.remove('menu-open');
+          document.body.style.overflow = '';
+          
+          // Remove animation classes
+          navLinks.forEach(link => {
+            link.classList.remove('animate-in');
+            link.style.animationDelay = '';
+          });
+        }
+      }
+
+      // Mobile menu button click
+      mobileMenuBtn.addEventListener('click', toggleMenu);
+
+      // Overlay click to close menu
+      navOverlay.addEventListener('click', toggleMenu);
+
+      // Close menu when nav link is clicked
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (isMenuOpen) {
+            toggleMenu();
+          }
+        });
+      });
+
+      // Close menu on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && isMenuOpen) {
+          toggleMenu();
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener('resize', function() {
+        if (window.innerWidth >= 1024 && isMenuOpen) {
+          toggleMenu();
+        }
       });
     });
   </script>
