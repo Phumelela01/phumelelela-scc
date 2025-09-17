@@ -2162,6 +2162,7 @@ footer {
   
   .donation-hero p {
     font-size: 1.125rem; /* 18px tablet */
+    color: white;
   }
   
   .donation-hero::before {
@@ -3202,13 +3203,13 @@ main .submit-button:hover {
   padding: 3rem 1.25rem; /* 48px 20px */
   border-radius: 1.25rem; /* 20px */
   margin-bottom: 3rem; /* 48px */
-  box-shadow: 0 0.75rem 2.5rem rgba(26,89,89,0.3); /* 0 12px 40px */
+  box-shadow: 0 0.75rem 2.5rem rgba(26,89,89,0.3); /* 0 12px 40px */ 
   position: relative;
   overflow: hidden;
 }
 
 .donation-hero::before {
-  content: '💝';
+  /* content: '💝'; */
   position: absolute;
   top: 1.5rem; /* 24px */
   right: 1.5rem; /* 24px */
@@ -3321,7 +3322,7 @@ main .submit-button:hover {
 }
 
 .bank-details::before {
-  content: '🏦';
+  /* content: '🏦'; */
   position: absolute;
   top: 1rem; /* 16px */
   right: 1rem; /* 16px */
@@ -3370,7 +3371,7 @@ main .submit-button:hover {
 }
 
 .donation-note::before {
-  content: '💡';
+  /* content: '💡'; */
   position: absolute;
   top: 1rem; /* 16px */
   left: 1rem; /* 16px */
