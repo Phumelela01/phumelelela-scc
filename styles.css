@@ -543,7 +543,7 @@ section, footer {
   transition: transform 0.3s ease;
   cursor: default;
   flex-shrink: 0;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 0.5rem; /* 8px */
 }
 
